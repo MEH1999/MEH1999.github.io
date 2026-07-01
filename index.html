@@ -155,8 +155,66 @@
         <span class="section__num">03</span>
         <h2>Projects</h2>
       </div>
-      <p class="section__lead">Hands-on labs and analytics builds across security, systems, and data.</p>
+      <p class="section__lead">A progression of hands-on builds — from log parsing and detection engineering to identity auditing and analytics dashboards. Each is a working, documented repository.</p>
       <div class="projects">
+
+        <article class="project project--featured">
+          <div class="project__top">
+            <span class="project__badge data">Featured · SOC + Data</span>
+            <span class="project__ico">📊</span>
+          </div>
+          <h3>SOC Metrics Dashboard</h3>
+          <p>An interactive dashboard over 1,650 managed-SOC incidents across 8 clients — alert volume, MTTR, SLA compliance, and false-positive rate — driven by a reproducible Python + SQL pipeline. Ships as a live Plotly web app and a Tableau build.</p>
+          <ul class="tags tags--sm"><li>Python</li><li>SQL</li><li>Plotly</li><li>KPIs</li></ul>
+          <div class="project__links">
+            <a class="project__link" href="https://meh1999.github.io/soc-metrics-dashboard/dashboard/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="project__link" href="https://github.com/MEH1999/soc-metrics-dashboard" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__badge sec">Detection Engineering</span>
+            <span class="project__ico">🛰️</span>
+          </div>
+          <h3>Sentinel Detections</h3>
+          <p>A library of KQL analytics and platform-agnostic Sigma rules for Microsoft Sentinel &amp; Defender — brute force, impossible travel, encoded PowerShell, privilege abuse — each mapped to MITRE ATT&amp;CK.</p>
+          <ul class="tags tags--sm"><li>KQL</li><li>Sigma</li><li>MITRE ATT&amp;CK</li></ul>
+          <a class="project__link" href="https://github.com/MEH1999/sentinel-detections" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__badge sec">Security · Python</span>
+            <span class="project__ico">🔎</span>
+          </div>
+          <h3>Auth Log Analyzer</h3>
+          <p>A dependency-free Python tool that parses Linux auth logs and flags SSH brute-force sources using a sliding-window burst rule — turning noisy syslog into a short list of IPs worth investigating.</p>
+          <ul class="tags tags--sm"><li>Python</li><li>Log Analysis</li><li>T1110</li></ul>
+          <a class="project__link" href="https://github.com/MEH1999/auth-log-analyzer" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__badge sec">Identity · PowerShell</span>
+            <span class="project__ico">🔐</span>
+          </div>
+          <h3>AD &amp; Entra Account Audit</h3>
+          <p>PowerShell tooling that audits Active Directory and Microsoft Entra ID for stale, risky, and over-permissioned accounts — the least-privilege reviews I run as a SOC analyst, automated and read-only.</p>
+          <ul class="tags tags--sm"><li>PowerShell</li><li>Active Directory</li><li>Entra ID</li></ul>
+          <a class="project__link" href="https://github.com/MEH1999/ad-account-audit" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__badge data">Data Analytics</span>
+            <span class="project__ico">📈</span>
+          </div>
+          <h3>Security Incident EDA</h3>
+          <p>Exploratory analysis of 40 major public data breaches with pandas &amp; matplotlib — trends by year, sector, and attack method, surfacing where record loss actually concentrates.</p>
+          <ul class="tags tags--sm"><li>pandas</li><li>matplotlib</li><li>EDA</li></ul>
+          <a class="project__link" href="https://github.com/MEH1999/security-incident-eda" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
 
         <article class="project">
           <div class="project__top">
@@ -165,7 +223,7 @@
           </div>
           <h3>Proxmox Home Lab</h3>
           <p>A self-hosted virtualization lab running VMs, a standalone VPN, and remote desktop access — my sandbox for testing detections, tooling, and Windows/Linux configurations.</p>
-          <ul class="tags tags--sm"><li>Proxmox</li><li>Virtualization</li><li>VPN</li><li>RDP</li></ul>
+          <ul class="tags tags--sm"><li>Proxmox</li><li>Virtualization</li><li>VPN</li></ul>
           <a class="project__link" href="https://github.com/MEH1999/Home-Lab" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
@@ -178,39 +236,6 @@
           <p>Designed and implemented Active Directory for a mock school — OUs, users, and Group Policy baselines — as my senior capstone project at Towson University.</p>
           <ul class="tags tags--sm"><li>Windows Server</li><li>Active Directory</li><li>GPO</li></ul>
           <a class="project__link" href="https://github.com/MEH1999/Active-Directory" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-
-        <article class="project">
-          <div class="project__top">
-            <span class="project__badge net">Networking</span>
-            <span class="project__ico">🌐</span>
-          </div>
-          <h3>Enterprise WAN Design</h3>
-          <p>Built a multi-site WAN with routers, switches, servers, and endpoints in Cisco Packet Tracer — configuring routing and addressing across the topology.</p>
-          <ul class="tags tags--sm"><li>Cisco</li><li>Packet Tracer</li><li>Routing</li></ul>
-          <a class="project__link" href="https://github.com/MEH1999/PacketTracerMidterm" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-
-        <article class="project">
-          <div class="project__top">
-            <span class="project__badge data">Data Analytics</span>
-            <span class="project__ico">📈</span>
-          </div>
-          <h3>NYC Evictions Analysis</h3>
-          <p>Cleaned, joined, and analyzed NYC eviction data with SQL, Excel, and Tableau, then presented findings to surface trends across boroughs and time.</p>
-          <ul class="tags tags--sm"><li>SQL</li><li>Tableau</li><li>Excel</li></ul>
-          <a class="project__link" href="https://github.com/MEH1999/DACOOP--Evictions" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-
-        <article class="project">
-          <div class="project__top">
-            <span class="project__badge data">Data Analytics</span>
-            <span class="project__ico">🧹</span>
-          </div>
-          <h3>COOP Data Visualization</h3>
-          <p>A teaching project walking through the full analytics workflow — data cleaning, transformation, and building clear, dynamic Tableau visualizations.</p>
-          <ul class="tags tags--sm"><li>Tableau</li><li>Data Cleaning</li><li>Storytelling</li></ul>
-          <a class="project__link" href="https://github.com/MEH1999/COOP-DataProject1" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="project">

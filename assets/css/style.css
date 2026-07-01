@@ -187,6 +187,13 @@ img { max-width: 100%; display: block; }
 .project p { color: var(--muted); font-size: 14.5px; margin-bottom: 16px; flex-grow: 1; }
 .project__link { color: var(--accent); font-weight: 600; font-size: 14.5px; margin-top: 14px; }
 .project__link:hover { color: var(--navy); }
+.project__links { display: flex; gap: 18px; margin-top: 14px; }
+.project__links .project__link { margin-top: 0; }
+
+/* Featured project spans two columns and gets an accent frame */
+.project--featured { grid-column: span 2; border-color: var(--accent-2); background: linear-gradient(140deg, var(--white), var(--periwinkle-soft)); }
+.project--featured h3 { font-size: 1.4rem; }
+.project--featured .project__ico { font-size: 1.9rem; }
 
 /* Timeline */
 .timeline { list-style: none; position: relative; padding-left: 8px; }
