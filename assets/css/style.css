@@ -195,6 +195,14 @@ img { max-width: 100%; display: block; }
 .project--featured h3 { font-size: 1.4rem; }
 .project--featured .project__ico { font-size: 1.9rem; }
 
+/* Tableau embed */
+.tableau-wrap { margin-top: 44px; }
+.tableau-wrap__title { font-size: 1.3rem; margin-bottom: 14px; }
+.tableau-embed { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px; box-shadow: var(--shadow-sm); overflow: hidden; }
+.tableau-embed tableau-viz { width: 100%; min-height: 560px; display: block; }
+.tableau-fallback { color: var(--muted); font-size: 14px; margin-top: 12px; }
+.tableau-fallback a { color: var(--accent); font-weight: 600; }
+
 /* Timeline */
 .timeline { list-style: none; position: relative; padding-left: 8px; }
 .timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--periwinkle-2), var(--periwinkle-soft)); }
